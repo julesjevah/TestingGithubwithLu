@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var text = document.getElementById("Text1").value;
+        var regx=/
+    if (regx.test(text)) {
+        document.getElementById("lbltext").innerHTML="valid";
+        document.getElementById("lbltext").style.visibility="visible";
+        document.getElementById("lbltext").style.color="green"; 
+    }
+    else{
+        document.getElementById("lbltext").innerHTML="Invalid";
+        document.getElementById("lbltext").style.visibility="visible";
+        document.getElementById("lbltext").style.color="red"; 
+    }
+
+    </script>
+
+
+    <form action="">
+
+    <input type="text" id="text1" placeholder="Email">
+    <label  for="" id="lbltext" style="color:red;visibility: hidden;">Invalid</label>
+    <br>
+    <button type="button" onclick="validate()"> submit</button>
+
+    </form>
+
+    
+</body>
+</html>

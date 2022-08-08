@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body> 
+    <script>
+
+        /*
+        \d - match any digit (equal to [0-9]
+        \w - match any work character (a-z, A-Z , 0-9 & -)
+        \s - match whicte space chatacater (eg -spaces & tabs )
+        \t - match atab any 
+        
+        */
+
+        function validatingThebox(){
+
+            var text1 = document.getElementById("text1").value;
+            
+             var regx = /[7-9]\d{9}$/;
+
+            //var  regx = /[5-7][a-z]\d{8}/;
+
+         if (regx.test(text1)) {
+            
+            document.getElementById("forOut").innerHTML="valid";
+            document.getElementById("forOut").style.visibility="visible";
+            document.getElementById("forOut").style.color="green";
+
+         }else{
+            document.getElementById("forOut").innerHTML="Invalid";
+            document.getElementById("forOut").style.visibility="visible";
+            document.getElementById("forOut").style.color="red";
+          
+         }
+        }    
+    </script>
+
+<form>
+username:<input type="text" placeholder="cellsphone N" id="text1"><br>
+<label id="forOut" style="color:red;  visibility:hidden"> invalid username</label>
+<br>
+<button onclick="validatingThebox()" type="button" >submit</button>
+
+</form>
+
+  </body>
+</html>

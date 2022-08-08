@@ -1,0 +1,43 @@
+<input lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input>
+
+    <script>
+      function funcToSelec(){
+
+      var rad1=  document.getElementById("radio1");
+      var rad2= document.getElementById("radio2");
+
+      if(radio1.checked==true){
+
+        alert("the value selected  is"+radio1.value);
+      }
+      else if(radio2.checked==true){
+
+        alert("the value selecteed  is "+radio2.value)
+
+      }else{
+        alert("no selected value")
+      }
+
+      }
+      
+      
+    
+    </script>
+
+    <br>
+    <input  type="radio" name="grp1" id="radio1" value="term1" >term1</input><br>
+    <input type="radio" name="grp1" id="radio2" value="term2">term2</input><br>
+    <button id="btn" onclick="funcToSelec()">click me</button>
+
+
+
+
+</body>
+</html>

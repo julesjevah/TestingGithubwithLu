@@ -1,0 +1,29 @@
+
+<head>
+    
+    <title>Document</title>
+
+    <script>
+      function changeStyling(){
+  var para = document.getElementsByTagName("p");
+  
+        for (var i = 0; i< para.length; i++) {
+         
+          para[i].style.fontSize=25;
+        }
+
+
+      }
+       </script>
+</head>
+<body>
+
+    <p>this is paragraph 1</p>
+    <p>this is paragraph 2</p>
+    <p>this is paragraph 3</p>
+    <p>this is paragraph 4</p>
+    <p>this is paragraph 5</p>
+<button onclick="changeStyling()"> click me</button>
+
+</body>
+</html>

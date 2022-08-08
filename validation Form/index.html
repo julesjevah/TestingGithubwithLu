@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    
+    function validate(){
+      var usernamee = document.getElementById("uname");
+      var password = document.getElementById("pass");
+
+      // this trim() is for avaoiding space to be valid in box validation
+
+
+    if (usernamee.value.trim()=="" || password.value.trim()=="") {
+      alert("NO BLANKVALUES ARE ALLOWED");
+      return false;
+    }
+    else{
+      return true;
+    }
+    }
+  </script>
+ <form action="message.html" onsubmit="return validate()">
+  
+username:<input type="text" id="uname" placeholder="USERNAME" ><br><br>
+password:<input type="password" id="pass" placeholder="PASSWORD"><br><br>
+<button  type="submit">SUBMIT</button>
+
+  </form>
+
+</body>
+</html>

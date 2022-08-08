@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function FunctionChange(){
+
+        var para = document.getElementsByClassName("jules");
+
+       for (var i = 0; i < para.length; i++) {
+        para[i].style.color="green";
+        
+       }
+
+    }
+  </script>
+
+  <!-- so hire i want to presss and then the font size of color changed in this line when i clicked the button -->
+  <p class="jules">this is the paragraph to change do day </p>
+  <p>this is the paragraph to change do day </p>
+  <p class="jules">this is the paragraph to change do day </p>
+  <p>this is the paragraph to change do day </p>
+  <p class="jules">this is the paragraph to change do day </p>
+  <button onclick="FunctionChange()">click me</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<!-- regural expression are used to perform poweful pattern - matching -->
+<!-- and seaching - and - replace function on text. -->
+<!-- for example the name of the employee company start woth  -->
+<!-- E00 -Tanmay - software_developer -->
+<!-- E00  like that and ae complorasly a -->
+
+<!-- you can use regex101.com website to save time -->
+
+
+    <script>
+      function validate() {
+        var  usernaeme = document.getElementById("uname").value;
+
+         // for checking the var inserted if its hold the  E00 is  as follows
+        // we use if  conterol
+
+        var regx = /E00/;
+        if (regx.test(usernaeme)) {
+            alert("valid username")
+            document.getElementById("val").style.visibility="visible";
+        }
+        else{
+            alert("invalid username");
+           document.getElementById("lbluser").style.visibility="visible";
+        }
+
+      }
+
+
+    </script>
+
+
+
+    <form action="message.html" onsubmit="return validate()">
+      username:<input type="text" id="uname" placeholder="USERNAME" />
+      <label id="lbluser" style="color: red; visibility:hidden">Invalid</label>
+      <label id="val" style="color: green; visibility:hidden">correct</label>
+      <br /><br />
+      <button onclick="validate()" type="button">SUBMIT</button>
+    </form>
+  </body>
+</html>
