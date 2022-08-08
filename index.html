@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+  
+  // function of the  new image
+  function  setNewImage(){
+  
+    document.getElementById("img1").src="image/images.jpg";
+  }
+
+function setoldImage(){
+
+  document.getElementById("img1").src="image/Batman.jpg"
+}
+
+  
+  </script>
+
+  <img src="image/Batman.jpg" id="img1" onmouseover="setNewImage()"
+   onmouseout="setoldImage()" width="1200" />
+</body>
+</html>
